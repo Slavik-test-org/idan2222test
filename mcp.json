@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "github-remote": {
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "filesystem-local": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "--allow-root", "/workspace"]
+    },
+    "docker-mcp": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "mcp/docker:latest"]
+    }
+  }
+}
